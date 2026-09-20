@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sovereign Blocker</title>
+    <style>
+        body {
+            width: 300px;
+            background-color: #11111b;
+            color: #cdd6f4;
+            font-family: monospace;
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        h2 {
+            font-size: 15px;
+            color: #89b4fa;
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: center;
+            border-bottom: 1px dashed #313244;
+            padding-bottom: 8px;
+        }
+        .warning-box {
+            background: #311e24;
+            border: 1px solid #f38ba8;
+            color: #f38ba8;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .input-group {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        input[type="text"] {
+            flex: 1;
+            background: #181825;
+            border: 1px solid #313244;
+            color: #cdd6f4;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-family: monospace;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #89b4fa;
+        }
+        button {
+            background: #89b4fa;
+            color: #11111b;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: monospace;
+        }
+        button:hover {
+            background: #b4befe;
+        }
+        .list-container {
+            max-height: 150px;
+            overflow-y: auto;
+            background: #181825;
+            border: 1px solid #313244;
+            border-radius: 6px;
+            padding: 6px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #313244;
+            padding: 4px 8px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .item span {
+            word-break: break-all;
+        }
+        .delete-btn {
+            background: #f38ba8;
+            color: #11111b;
+            border: none;
+            border-radius: 4px;
+            padding: 2px 6px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .delete-btn:hover {
+            background: #eba0ac;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #f38ba8;
+            margin-top: 12px;
+            border-top: 1px dashed #313244;
+            padding-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h2>🛡️ Sovereign Blocker</h2>
+    
+    <div class="warning-box">
+        ⚠️ <strong>NOTICE:</strong> THIS BROWSER / EXTENSION DOESN'T WORK PROPERLY WITH GOOGLE SEARCH. Use SearXNG or Brave!
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="keywordInput" placeholder="Add keyword/brand...">
+        <button id="addBtn">Add</button>
+    </div>
+    <div class="list-container" id="listContainer">
+        <!-- Dinamik liste buraya gelecek -->
+    </div>
+    <div class="footer">~ Arch Linux Sovereignty ~</div>
+    <script src="popup.js"></script>
+</body>
+</html>
