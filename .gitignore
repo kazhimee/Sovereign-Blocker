@@ -1,0 +1,8 @@
+# Generated extension packages
+*.xpi
+*.zip
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/

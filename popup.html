@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sovereign Blocker</title>
+  <style>
+    :root { color-scheme: dark; font: 15px/1.5 system-ui, sans-serif; background:#111827; color:#e5e7eb; }
+    body { width:300px; margin:0; padding:22px; box-sizing:border-box; }
+    header { display:flex; gap:12px; align-items:center; margin-bottom:18px; }
+    img { width:38px; height:38px; }
+    h1 { font-size:17px; margin:0; } p { color:#aab4c5; margin:5px 0 18px; }
+    button { width:100%; padding:11px 14px; border:0; border-radius:9px; background:#8bafff; color:#101827; font-weight:700; font-size:14px; cursor:pointer; }
+    button:hover { background:#a9c2ff; }
+    .status { border:1px solid #29364a; background:#182235; border-radius:9px; padding:12px; margin-bottom:16px; color:#c5d0e0; }
+    .dot { color:#86efac; margin-right:7px; }
+    footer { margin-top:14px; text-align:center; font-size:12px; color:#8290a5; }
+  </style>
+</head>
+<body>
+  <header><img src="icon.png" alt=""><h1>Sovereign Blocker</h1></header>
+  <div class="status"><span class="dot">●</span><span id="statusText">Filtering is on</span></div>
+  <p>Your filter list starts empty. Choose what to filter in the full settings page.</p>
+  <button id="openSettings" type="button">Open settings</button>
+  <footer>Privacy first · Nothing selected by default</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

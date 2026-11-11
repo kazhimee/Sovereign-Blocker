@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · Sovereign Blocker</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#filters"><img src="icon.png" alt=""><span>Sovereign Blocker<small>Settings</small></span></a>
+      <nav aria-label="Settings sections">
+        <a class="nav-link active" href="#filters">Filter settings</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#keywords">Custom keywords</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <div class="sidebar-note">Your choices stay on this device.</div>
+    </aside>
+    <main>
+      <section class="intro" id="filters">
+        <p class="eyebrow">PREFERENCES</p>
+        <h1>Filter settings</h1>
+        <p>Choose which search results to hide. Everything starts off, and you can change these choices anytime.</p>
+        <div class="master card">
+          <div><strong>Filtering</strong><p>Pause or resume all filtering on supported search pages.</p></div>
+          <label class="switch"><input type="checkbox" id="enabled"><span class="slider"></span><span class="sr-only">Enable filtering</span></label>
+        </div>
+      </section>
+      <section class="section" id="services">
+        <div class="section-head"><div><p class="eyebrow">PICK WHAT TO FILTER</p><h2>Services</h2><p>Selected services are filtered from search results. No company or service is selected by default.</p></div></div>
+        <div id="serviceGroups" class="groups"></div>
+      </section>
+      <section class="section" id="keywords">
+        <p class="eyebrow">PERSONAL FILTERS</p><h2>Custom keywords</h2>
+        <p>Add a word or phrase. Results are filtered when the phrase appears repeatedly or as a website address.</p>
+        <form id="keywordForm" class="add-row"><label class="sr-only" for="keywordInput">Keyword or phrase</label><input id="keywordInput" type="text" maxlength="80" placeholder="Add a keyword or phrase"><button type="submit">Add keyword</button></form>
+        <div id="keywordList" class="keyword-list"></div>
+        <p id="emptyKeywords" class="empty">No custom keywords yet.</p>
+      </section>
+      <section class="section about" id="about">
+        <p class="eyebrow">SOVEREIGN BLOCKER</p><h2>About</h2>
+        <p>Developer: <strong>Kazhime Kagemori</strong></p>
+        <div class="about-links"><a href="https://github.com/kazhimee/Sovereign-Blocker" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a><a href="mailto:kazhimeofficial@gmail.com">Contact ↗</a><a href="https://www.patreon.com/cw/kazhimee" target="_blank" rel="noopener noreferrer">Support on Patreon ↗</a></div>
+        <p class="version">Version 5.1.0</p>
+      </section>
+      <div id="saveStatus" class="save-status" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>
